@@ -1,25 +1,31 @@
-import React, {Component} from "react";
-import {Alert, Button, StyleSheet, Text, View} from 'react-native';
+import React from "react";
+import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView} from 'react-native';
+import {ThisIsMyName} from "./Name";
+import {NameInput} from "./Name";
 
-class MyState extends Component {
-  state = {
-    goodnight: 'Torjus, good night!!'
-  }
-
-updateState = () => this.setState({goodnight: 'is it working'})
-  render() {
-    return (
-        <View style={styles.container}>
-          <Button
-              title={this.state.goodnight}
-              onPress={this.updateState}
-          />
-        </View>
-    );
-  }
+function SomeText() {
+  return (
+      <Text>
+        Working fine, doesn't it?
+      </Text>
+  )
 }
 
-export default MyState;
+
+const App = () => {
+    return (
+          <View style={styles.container}>
+            <Text>Hello there</Text>
+            <Button title={'hello there'}/>
+            <ThisIsMyName/>
+            <NameInput/>
+          </View>
+    );
+
+  };
+
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
