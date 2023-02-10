@@ -1,7 +1,6 @@
 import React from "react";
 import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView, Image} from 'react-native';
-import {ThisIsMyName} from "./Name";
-import {NameInput} from "./Name";
+import {ThisIsMyName, NameInput} from "./Name";
 import {MyFlatList} from "./Flatlist";
 
 
