@@ -1,9 +1,8 @@
 import React from "react";
 import {StyleSheet, Text, TextInput, View} from "react-native";
-const Name = () => {
-    const name = 'Terje'
+const Name = props => {
     return (
-        <Text>My name is {name}</Text>
+        <Text>My name is {props.name}</Text>
     )
 };
 
