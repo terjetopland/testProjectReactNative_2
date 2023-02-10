@@ -14,9 +14,6 @@ const App = () => {
                       require('./images/react_native.png')}
             />
             <Text>Hello there</Text>
-            <Button
-                title={'hello there'}
-            />
             <ThisIsMyName name='Terje'/>
             <NameInput/>
           </View>
