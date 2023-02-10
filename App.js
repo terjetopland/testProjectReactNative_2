@@ -3,25 +3,20 @@ import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView, Im
 import {ThisIsMyName} from "./Name";
 import {NameInput} from "./Name";
 
-function SomeText() {
-  return (
-      <Text>
-        Working fine, doesn't it?
-      </Text>
-  )
-}
 
 // 'App' is parent component, 'ThisIsMyName' and 'NameInput' is child components
 const App = () => {
     return (
           <View style={styles.container}>
-              <Image
+            <Image
                   style={{height: 200, width: 500}}
                   source={
-                      require('./images/react_native.png')
-                  }/>
+                      require('./images/react_native.png')}
+            />
             <Text>Hello there</Text>
-            <Button title={'hello there'}/>
+            <Button
+                title={'hello there'}
+            />
             <ThisIsMyName name='Terje'/>
             <NameInput/>
           </View>
