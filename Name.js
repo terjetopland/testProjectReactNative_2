@@ -25,11 +25,24 @@ const Name = () => {
 };
 
 const NameInput = () => {
+    const [name, setName] = useState('');
+
+    const SubmitPressed= () => {
+        return <Text>{name}</Text>
+    }
+
     return (
         <View>
-            <Text style={{marginTop: 10}}>Please enter your name</Text>
-            <TextInput style={inputStyles.container}
+            <TextInput
+                style={inputStyles.container}
+               placeholder="Type your name here!"
+               onChangeText={newText => setName(newText)}
+               defaultValue={name}
             />
+           <Button
+               title={'Submit'}
+               onPress={SubmitPressed}
+           />
         </View>
     )
 }
