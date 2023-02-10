@@ -1,22 +1,17 @@
 import React from "react";
 import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView, Image} from 'react-native';
-import {ThisIsMyName, NameInput} from "./Name";
-import {MyFlatList} from "./Flatlist";
+import {FirstOne} from "./FIrstOne";
+import {MyFlatList} from "./MyFlatList";
+import {MySectionList} from "./MySectionList";
 
 
 // 'App' is parent component, 'ThisIsMyName' and 'NameInput' is child components
 const App = () => {
     return (
           <View style={styles.container}>
-            <Image
-                  style={{height: 200, width: 500}}
-                  source={
-                      require('./images/react_native.png')}
-            />
-            <Text>Hello there</Text>
-            <ThisIsMyName name='Terje'/>
-            <NameInput/>
+            <FirstOne/>
             <MyFlatList/>
+            <MySectionList/>
           </View>
     );
   };
@@ -29,7 +24,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     paddingTop: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
