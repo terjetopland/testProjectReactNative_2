@@ -4,7 +4,8 @@ import {FlatList, StyleSheet, Text, View} from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingTop: 40,
+        paddingTop: 150,
+        paddingBottom: 20,
     },
     item: {
         padding: 10,

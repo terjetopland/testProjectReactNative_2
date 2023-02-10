@@ -15,10 +15,21 @@ const Name = () => {
                 title={name ? 'Please push the button to view my name!' : 'WOW you did it!!'}
             />
             <Button
+                onPress={() => {setName(true)}}
+                disabled={name}
+                title={name ? 'Cant press this button yet!' : 'Perfect, now you can!'}
+            />
+            <Button
                 onPress={() => {setLikeToBuild(false)}}
                 disabled={!likeToBuild}
                 title={likeToBuild ? 'Please push the button!' : 'WOW!!'}
             />
+            <Button
+                onPress={() => {setLikeToBuild(true)}}
+                disabled={likeToBuild}
+                title={likeToBuild ? 'Will it work again?' : 'Oh yes!!'}
+            />
+
         </View>
 
     )
