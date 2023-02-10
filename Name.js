@@ -1,8 +1,20 @@
-import React from "react";
-import {StyleSheet, Text, TextInput, View} from "react-native";
+import React, {useState} from "react";
+import {Button, StyleSheet, Text, TextInput, View} from "react-native";
 const Name = props => {
+    const [likeToBuild, setLikeToBuild] = useState(true);
+
     return (
-        <Text>My name is {props.name}</Text>
+        <View>
+            <Text>
+                My name is {props.name}, and I like building {likeToBuild ? 'stuff' : 'with the keyboard'}
+            </Text>
+            <Button
+                onPress={() => {setLikeToBuild(false)}}
+                disabled={!likeToBuild}
+                title={likeToBuild ? 'Please push the button!' : 'WOW!!'}
+            />
+        </View>
+
     )
 };
 
