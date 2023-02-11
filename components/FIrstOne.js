@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image} from 'react-native';
-import {ThisIsMyName, NameInput} from "./Name";
+import {ThisIsMyName, NameInput} from "../Name";
 
 
 
@@ -11,7 +11,7 @@ const FirstOne = () => {
             <Image
                 style={{height: 200, width: 500}}
                 source={
-                    require('./images/react_native.png')}
+                    require('../images/react_native.png')}
             />
             <Text>Hello there</Text>
             <ThisIsMyName name='Terje'/>

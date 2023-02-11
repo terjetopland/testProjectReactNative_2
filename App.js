@@ -1,19 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView, Image} from 'react-native';
-import {FirstOne} from "./FIrstOne";
-import {MyFlatList} from "./MyFlatList";
-import {MySectionList} from "./MySectionList";
+import {FirstOne} from "./components/FIrstOne";
+import {MyFlatList} from "./components/MyFlatList";
+import {MySectionList} from "./components/MySectionList";
+
+//import the Login component
+import Login from "./components/Login";
+
 
 
 // 'App' is parent component, 'ThisIsMyName' and 'NameInput' is child components
 const App = () => {
-    return (
-          <View style={styles.container}>
-            <FirstOne/>
-            <MyFlatList/>
-            <MySectionList/>
-          </View>
-    );
+    const [user, setUser] = useState(null);
+
+    if(!user){
+        return <Login setUser={setUser}/>
+    }
+    else {
+        return (
+            <View style={styles.container}>
+                <Text>Hello There!</Text>
+                <MySectionList/>
+            </View>
+        );
+    }
   };
 
 
