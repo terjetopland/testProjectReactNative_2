@@ -14,7 +14,11 @@ const App = () => {
     const [user, setUser] = useState(null);
 
     if(!user){
-        return <Login setUser={setUser}/>
+        return (
+            <View style={styles.container}>
+                <Login setUser={setUser}/>
+            </View>
+        );
     }
     else {
         return (
@@ -32,7 +36,7 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#9ff',
     paddingTop: 40,
   },
 });
