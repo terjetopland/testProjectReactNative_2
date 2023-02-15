@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
-import { secretApiKey, secretAuthDomain} from "./SecretKeys";
+import {secretApiKey, secretAuthDomain, msgSenderId, appId, measuremId} from "./SecretKeys";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,9 +14,9 @@ const firebaseConfig = {
     authDomain: secretAuthDomain,
     projectId: "tetotestproject-1",
     storageBucket: "tetotestproject-1.appspot.com",
-    messagingSenderId: "750419513732",
-    appId: "1:750419513732:web:9a515855d7133874b14dd1",
-    measurementId: "G-F1LX5ZMNDP"
+    messagingSenderId: msgSenderId,
+    appId: appId,
+    measurementId: measuremId
 };
 
 // Initialize Firebase
