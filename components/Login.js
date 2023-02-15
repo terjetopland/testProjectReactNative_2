@@ -4,7 +4,7 @@ import {signInWithEmailAndPassword} from "firebase/auth";
 import {auth} from "../firebaseConfig";
 import {Button, Text, TextInput, View, StyleSheet} from "react-native";
 
-// The prop setUser is a function that allows the parent component to get the logged in user from this component
+// The prop setUser is a function that allows the parent component to get the logged-in user from this component
 const Login = ({setUser}) => {
     // Component state, mirrors the input fields
     const [username, setUsername] = useState(''); // person1@person1.com
