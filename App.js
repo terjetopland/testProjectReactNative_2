@@ -3,7 +3,6 @@ import {Alert, Button, StyleSheet, Text, View, Switch, TextInput, ScrollView, Im
 import {FirstOne} from "./components/FIrstOne";
 import {MyFlatList} from "./components/MyFlatList";
 import {MySectionList} from "./components/MySectionList";
-
 //import the Login component
 import Login from "./components/Login";
 
